@@ -1,3 +1,6 @@
 # VimIDE_config
 
-Hm... you need vim-plug and run `:PlugInstall`
+Just install [vim-plug](https://github.com/junegunn/vim-plug) and mv `.vim` and `.vimrc`.
+Now run `:PlugInstall` and have fun.
+
+For the list of pluginm use the same command.
