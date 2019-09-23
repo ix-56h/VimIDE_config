@@ -2,7 +2,9 @@ set number
 set smartindent
 set autoindent
 set ruler
-set expandtab
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set mouse=a
 syntax on
 colorscheme Tomorrow-Night
@@ -96,13 +98,13 @@ Plug '~/my-prototype-plugin'
 "       Syntax checking hack for vim
 Plug 'scrooloose/syntastic'
 
-"	Vim script for text filtering and alignment
+"   Vim script for text filtering and alignment
 Plug 'godlygeek/tabular'
 
-"	Powerful shell implemented by vim
+"   Powerful shell implemented by vim
 Plug 'shougo/vimshell.vim'
 
-"	Lean & mean status/tabline for vim that's light as air
+"   Lean & mean status/tabline for vim that's light as air
 Plug 'vim-airline/vim-airline'
 
 "       Fuzzy file, buffer, tag, etc finder.
@@ -114,6 +116,10 @@ Plug 'vim-airline/vim-airline-themes'
 
 "       Badwolf theme
 "Plug 'sjl/badwolf'
+
+"  ignore version warning
+
+let g:go_version_warning = 0
 
 " Initialize plugin system
 call plug#end()
