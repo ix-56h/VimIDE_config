@@ -10,7 +10,6 @@ syntax on
 colorscheme Tomorrow-Night
 hi Normal guibg=NONE ctermbg=NONE
 let mapleader = ","
-set visualbell
 
 "---------------------------- Syntastic ---------------------------- 
 
