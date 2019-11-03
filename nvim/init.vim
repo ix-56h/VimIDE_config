@@ -7,7 +7,6 @@ set shiftwidth=4
 set softtabstop=4
 set mouse=a
 syntax on
-colorscheme Tomorrow-Night
 hi Normal guibg=NONE ctermbg=NONE
 let mapleader = ","
 
@@ -61,10 +60,14 @@ else
   Plug 'roxma/nvim-yarp'
 endif
 
+Plug 'morhetz/gruvbox'
+
 Plug 'zchee/deoplete-jedi'
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 let g:deoplete#enable_at_startup = 1
+
+Plug 'scrooloose/syntastic'
 
 " Make sure you use single quotes
 
@@ -108,3 +111,4 @@ let g:go_version_warning = 0
 
 " Initialize plugin system
 call plug#end()
+colorscheme gruvbox
